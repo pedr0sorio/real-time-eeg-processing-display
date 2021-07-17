@@ -9,7 +9,7 @@ This project was developed within the scope of the [IASB] curricular unit of the
  - **[Pedro Osório]**
 
 The project can be divided into two parts:
-- The acquistion hardware.
+- The acquistion device (hardware).
 - The processing and display software.
 
 The repository includes all the files (ArduinoIDE code and MATLAB code) used to perform the signal's acquisition, realtime processing and display.
