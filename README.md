@@ -31,7 +31,7 @@ Once the data is being received by the computer, we can process a user-specified
 Finally, a LiPo 3.7V rechargeable battery is used to power the XIAO via the 5V pin, which, in turn, will power both the sensor and the Bluetooth module via the 3.3V pin.
 
  <a href="url"><img src=./images/pipeline_with_intrr.jpg align="center"></a>
-
+ 
 **Figure 1** - Montage schematic.
 
 ### Processing and Display
