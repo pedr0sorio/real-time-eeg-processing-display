@@ -8,8 +8,12 @@ As we have previously stated, the data coming from the sensor is sampled into di
 We developed a MATLAB script (_Main.m_) that detects every time a new value is printed onto a user-specified communication port and runs a specific function. We created a function for this purpose (_callbackserial.m_) that stores the last printed value and, from time to time, processes a window of the EEG signal and displays various features. The length of the window and the frequency of the processing and display can all be specified by the user in the _Main.m_ script.
 The processing done during our acquisitions was twofold, providing both time and frequency information. Regarding the time information, we low pass filter at 30 Hz and plot the most recent 5 second window of our signal every 4 seconds, providing a continuous tracking of the evolution of our waveform. When it comes to the frequency information, we computed the Power Density Spectrum (PDS) of the last 5 second window also at the same rate. Adding to that, the relative band powers are also computed and displayed alongside with the PDS plot. Our processing steps are summarised in Figure 1.
 
-![](https://imgur.com/FsZnmud)
+<p align="center">
+  <a href="url"><img src=./images/realtimeprocessing_rose.png align="center" height="300" width="600"></a>
+</p>
 **Figure 1** - Pipeline.
+
+
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen.)
 
