@@ -34,7 +34,7 @@ Finally, a LiPo 3.7V rechargeable battery is used to power the XIAO via the 5V p
 
 **Figure 1** - Montage schematic.
 
-### Processing
+### Processing and Display
 Data coming from the sensor is sampled into digital codes by the XIAO’s 10-bit ADC and broadcasted to the computer’s Bluetooth Communication Port at 250 Hz.
 We developed a MATLAB script (_Main.m_) that detects every time a new value is printed onto a user-specified communication port and runs a specific function. We created a function for this purpose (_callbackserial.m_) that stores the last printed value and, from time to time, processes a window of the EEG signal and displays various features. The length of the window and the frequency of the processing and display can all be specified by the user in the _Main.m_ script.
 The processing done during our acquisitions was twofold, providing both time and frequency information. Regarding the time information, we low pass filter at 30 Hz (_EEG_PreProcessing.m_) and plot the most recent 5 second window of our signal every 4 seconds, providing a continuous tracking of the evolution of our waveform. When it comes to the frequency information, we computed the Power Density Spectrum (PDS) of the last 5 second window also at the same rate (_pds_plot_realtime.m_). Adding to that, the relative band powers are also computed and displayed alongside with the PDS plot. Our processing steps are summarised in Figure 2.
@@ -43,6 +43,8 @@ The processing done during our acquisitions was twofold, providing both time and
 
 **Figure 2** - Processing and display pipeline.
 
+It was also within the scope of this project to use our acquistion, processing and display solution to test the output signals from various types of EEG electrodes. We tested several types of electrodes and, inclusively, created our own electrodes which were 3D printed with a conductive polymer. See designs in repository [3d-printed-eeg-electrodes].
+
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen.)
 
    [Diogo Antunes]: <https://github.com/>
@@ -50,3 +52,4 @@ The processing done during our acquisitions was twofold, providing both time and
    [IASB]: <https://fenix.tecnico.ulisboa.pt/cursos/mebiom/disciplina-curricular/1529008374839>
    [Master in Biomedical Engineering]: <https://fenix.tecnico.ulisboa.pt/cursos/mebiom>
    [Instituto Superior Técnico, Universidade de Lisboa]: <https://tecnico.ulisboa.pt/en/)>
+   [3d-printed-eeg-electrodes]: <https://github.com/pedr0sorio/3d-printed-eeg-electrodes>
