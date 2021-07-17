@@ -1,6 +1,6 @@
 # Realtime EEG Processing and Display
 
-Real-time EEG signal processing and display in MATLAB
+Real-time EEG signal processing and display in MATLAB.
 
 This project was developed within the scope of the [IASB] curricular unit of the 1st Year/2nd Semester of the [Master in Biomedical Engineering] at [Instituto Superior Técnico, Universidade de Lisboa]. The full report can also be consulted (**recommended**).
 
