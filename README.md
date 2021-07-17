@@ -21,7 +21,7 @@ A few guidelines and explanations will also be given with regards to the hardwar
 - Bluetooth module for wireless information transfer (serial cable communication can also be used, however with larger suscetability to noise)
 - MATLAB
 - ArduinoIDE
-- EEG sensor and elctrodes
+- EEG sensor and electrodes
 - Power Supply
 
 ## Project Overview
